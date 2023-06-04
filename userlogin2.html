@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  
+  <style>
+  
+
+body {
+  background-image: url("lg3bg.png");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+}
+ 
+    
+
+    
+
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 200px;
+      background-color: #ebd8f7;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #800075;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #555;
+      pointer-events: none;
+      transition: 0.3s ease-out;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #008080;
+    }
+
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label {
+      top: -12px;
+      left: 8px;
+      font-size: 12px;
+      color: #008080;
+      background-color: #fff;
+      padding: 2px 6px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #008080;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #500059;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .social-login {
+      margin-top: 20px;
+    }
+
+    .social-login p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      border-radius: 50%;
+      color: #fff;
+      background-color: #008080;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background-color: #005959;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User Login</h2>
+    <form id="login-form">
+      <div class="input-group">
+        <input type="text" id="username" required>
+        <label for="username">Username</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" required>
+        <label for="password">Password</label>
+      </div>
+      <button type="submit" class="btn">Login</button>
+
+      
+    </form>
+    <div class="text-center social-login">
+      <p>Signup / Register </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      
+      // TODO: Add your login logic here
+      
+      // For demonstration purposes, let's just log the entered values
+      console.log('Username:', username);
+      console.log('Password:', password);
+    });
+  </script>
+</body>
+</html>

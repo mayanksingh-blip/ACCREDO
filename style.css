@@ -1,0 +1,133 @@
+
+@font-face {
+  font-family: 'logofont';
+  src: url('Aquire-BW0ox.otf') format('opentype');
+  
+}
+h1 {
+  color: rgb(229, 199, 103);
+  }
+
+
+
+/* Styling for the header area */
+.header {
+  height: 80px; /* Adjust the height as needed */
+  
+  padding: 20px; /* Adjust the padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* Styling for the left side panel (lbar) */
+.lbar {
+  width: 200px; /* Adjust the width as needed */
+  height: calc(100vh - 80px); /* Account for the header height */
+  
+  padding: 20px; /* Adjust the padding as needed */
+  float: left;
+}
+
+/* Styling for the square boxes in the left panel */
+.lbar a {
+  display: block;
+  margin-bottom: 10px; /* Adjust the spacing between links */
+  padding: 10px; /* Adjust the padding as needed */
+  text-decoration: none;
+  color: #333; /* Text color of the links */
+  background-color: white; /* Background color of the square boxes */
+  border-radius: 4px; /* Make the boxes square */
+  border: 5px solid black;
+}
+
+.lbar a:hover {
+  background-color: #aaa; /* Background color on hover */
+}
+
+/* Styling for the right side panel (rbar) */
+.rbar {
+  width: 100px; /* Adjust the width as needed */
+  height: calc(100vh - 80px); /* Account for the header height */
+  
+  padding: 20px; /* Adjust the padding as needed */
+  float: right;
+}
+
+/* Styling for the circle links in the right panel */
+
+
+
+/* Styling for the main content area */
+.content {
+  margin-top: 80px; /* Adjust the margin-top to account for the header height */
+  margin-left: 220px; /* Adjust the margin-left to account for the lbar width and some spacing */
+  margin-right: 220px; /* Adjust the margin-right to account for the rbar width and some spacing */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh; /* Adjust the height as needed */
+}
+
+
+/* Styling for the content block */
+.content img{
+  margin-left: 10px;
+  align-content: center;
+}
+
+
+/* Styling for the profile picture link */
+.round-image {
+  display: inline-block;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the link circular */
+  overflow: hidden; /* Clip the image inside the circle */
+  margin: 10%;
+  border: 5px solid black;
+}
+
+/* Styling for the profile picture */
+.round-image img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover;
+}
+body{
+  background-image: url("bgmain2.png");
+  background-repeat: no-repeat;
+}
+
+
+
+.search-bar {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  width: 50%;
+  margin-left: 11%;
+}
+
+.search-bar button {
+  margin-left: 10px;
+}
+
+h1{
+  font-family:logofont;
+  font-size: 60px;
+}
